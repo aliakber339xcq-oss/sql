@@ -239,7 +239,7 @@ export function SupportWidget({ user }: { user: User }) {
                     <motion.a
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      href="sms:+8801700000000"
+                      onClick={() => setTab('messages')}
                       className="bg-white border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] p-4 rounded-3xl flex flex-col items-center justify-center gap-2 hover:bg-slate-50 transition-colors"
                     >
                       <MessageSquare size={24} className="text-indigo-600 mb-1" />
